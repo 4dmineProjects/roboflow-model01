@@ -1,7 +1,12 @@
 from flask import Flask, request, render_template_string
 import base64
 from io import BytesIO
-from inference_sdk import InferenceHTTPClient
+
+try:
+    from inference_sdk import InferenceHTTPClient
+    print("----------------------->>>>>>>>>InferenceHTTPClient imported successfully!")
+except ImportError as e:
+    print(f"----------------------->>>>>>>>>Error importing InferenceHTTPClient: {e}")
 
 
 app = Flask(__name__)
@@ -9,7 +14,7 @@ app = Flask(__name__)
 
 @app.route('/', methods=['GET'])
 def check():
-    return 'App is Working x1'
+    return 'App is Working 1'
 
 
 
