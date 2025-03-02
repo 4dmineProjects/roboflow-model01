@@ -1,7 +1,7 @@
 from flask import Flask, request, render_template_string
 import base64
 from io import BytesIO
-from inference_sdk import InferenceHTTPClient
+#from inference_sdk import InferenceHTTPClient
 
 
 #Cpnstaants
