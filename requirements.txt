@@ -6,4 +6,4 @@ pandas
 datetime
 pandas
 joblib
-inference_sdk
+inference-sdk
