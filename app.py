@@ -69,7 +69,7 @@ def upload_image():
         print('------' , res)
         
 
-    return res
+    return str(res)
 
 if __name__ == '__main__':
     app.run(debug=True)
