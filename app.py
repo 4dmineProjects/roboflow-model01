@@ -1,6 +1,6 @@
 from flask import Flask, request
 import base64
-from inference_sdk import InferenceHTTPClient
+
 
 
 app = Flask(__name__)
