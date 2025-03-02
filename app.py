@@ -2,6 +2,12 @@ from flask import Flask, request
 import base64
 
 
+try:
+    from inference_sdk import InferenceHTTPClient
+    print("InferenceHTTPClient imported successfully!")
+except ImportError as e:
+    print(f"Error importing InferenceHTTPClient: {e}")
+
 
 app = Flask(__name__)
 
